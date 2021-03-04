@@ -169,7 +169,7 @@ class Linear:
         self.output = inputs
 
     # Backward pass
-    def backward self, dvalues):
+    def backward (self, dvalues):
        
         self.dinputs = dvalues.copy()
 
@@ -661,13 +661,6 @@ class Model:
         self.loss.remember_trainable_layers(
             self.trainable_layers
         )
-
-        
-        if isinstance(self.layers[-1], Softmax) and \
-           isinstance(self.loss, CategoricalCrossentropy):
-        
-            self.softmax_classifier_output = \
-                Softmax_CategoricalCrossentropy()
 
     # Train the model
     def fit(self, X, y, *, epochs=1, print_every=1,
