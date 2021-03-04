@@ -1,5 +1,5 @@
+''' Currently Version 1.0.'''
 import numpy as np
-import nnfs
 
 # Dense layer
 class Dense:
