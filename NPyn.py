@@ -756,7 +756,7 @@ class Accuracy_Regression(Accuracy):
 
 
 # Model class
-class Model:
+class Net:
 
     def __init__(self):
         # Create a list of network objects
