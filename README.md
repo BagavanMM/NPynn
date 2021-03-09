@@ -1,5 +1,5 @@
 # NPynn - Build Neural Networks in Python (v.1.1)
-This repository shows the code to a project caleld NPynn <i>(En-pine)</i>, a deep learning framework that allows you to perform classifciation and regression
+This repository shows the code to a project called NPynn <i>(En-pine)</i>, a deep learning framework that allows you to perform classification and regression
 
 ## Table of Contents
 [Contents of Framework](#contents-of-framework)<br>
@@ -7,7 +7,7 @@ This repository shows the code to a project caleld NPynn <i>(En-pine)</i>, a dee
 
 
 ## Contents of Framework
-Currently(v.1.0), this frameowrk is pretty basic. 
+Currently(v.1.0), this framework is pretty basic. 
 #### Layers:
 *Dense/Fully Connected Layers, Dropout Layers, Input Layers (For first layer of model)*
 #### Activations: 
@@ -15,7 +15,7 @@ Currently(v.1.0), this frameowrk is pretty basic.
 #### Optimizers:
 *SGD, Adagrad, RMSprop, Adam*
 #### Losses:
-*Categorical Crossentropy, Binary Crossentropy, Mean Squared Error (MSE), Mean Absolute Error (MAE)*
+*Categorical Cross Entropy, Binary Crossentropy, Mean Squared Error (MSE), Mean Absolute Error (MAE)*
 #### Accuracy:
 *Categorical and Regression*
 
@@ -37,7 +37,7 @@ model.add(Dense(128, 10))
 model.add(Softmax())
 ```
 #### Compile model
-After building the actuall model, you woudl then need to compile the model using `model.compile()` with the accuracy, loss, and optimizer.
+After building the actual model, you would then need to compile the model using `model.compile()` with the accuracy, loss, and optimizer.
 ```
 model.compile(
               loss = CategoricalCrossentropy(),
@@ -45,7 +45,7 @@ model.compile(
               optimizer = Adam(learning_rate=0.01)
               )
 ```
-Before training, we need to finalize our model using the `model.finalize()` function. This function will *finalize* the model so that the its ready to train.
+Before training, we need to finalize our model using the `model.finalize()` function. This function will *finalize* the model so that it's ready to train.
 ```
 model.finalize()
 ```
@@ -54,8 +54,8 @@ model.finalize()
 Finally, after finalizing our model we will now begin to train it. This will be done with the `model.train()` function. This function has 6 parameters. The first two parameters are where you add your labels and features(X, and y). `model.train(X, y)` <br>
 The third parameter is the `validation_data` parameter. If you have validation data, you can use this parameter to add your data. `model.train(..., validation_data=(X_val, y_val)` <br>
 You will then need to choose the number of `epochs` as well as `batch_size`. `model.train(..., epochs=5, batch_size=128)` <br>
-Finally, you can specify when you want your model to print the summary while training with the `print_every` function. `model.train(..., print_every=100)`. Keep in mind that the this funciton will be 100 by default.
-<br> Putting this code all together you woudl train your model like this:
+Finally, you can specify when you want your model to print the summary while training with the `print_every` function. `model.train(..., print_every=100)`. Keep in mind that this function will be 100 by default.
+<br> Putting this code all together you would train your model like this:
 ```
 model.train(X, y, validation_data=(X_val, y_val), epochs=5, batch_size=128, print_every=100)
 ```
