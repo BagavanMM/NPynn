@@ -3,7 +3,7 @@ This repository shows the code to a project caleld NPynn <i>(En-pine)</i>, a dee
 
 # Table of Contents
 [What this framework includes](#what-this-framework-includes)<br>
-[How to build model](#how-to-build-model)
+[How to Use NPynn](#how-to-use-npynn)
 
 
 ## What this framework includes 
@@ -20,7 +20,7 @@ Currently(v.1.0), this frameowrk is pretty basic.
 *Categorical and Regression*
 
 
-## How to build model
+## How to use NPynn
 Let's go over how to build a model. This section won't go over how to load models, but just how to build a model. You can check out the example codes in this repository to see how you can load models.
 <br> We first need to begin by calling our `Net` function.
 ```
