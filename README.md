@@ -57,3 +57,17 @@ model.compile(
               optimizer = Adam(learning_rate=0.01)
               )
 ```
+Before training, we need to finalize our model using the `model.finalize()` function. This function will *finalize* the model so that the its ready to train.
+```
+model.finalize()
+```
+
+#### Train our model
+Finally, after finalizing our model we will now begin to train it. This will be done with the `model.train()` function. This function has 6 parameters. The first two parameters are where you add your labels and features(X, and y). `model.train(X, y)` <br>
+The third parameter is the `validation_data` parameter. If you have validation data, you can use this parameter to add your data. `model.train(..., validation_data=(X_val, y_val)` <br>
+You will then need to choose the number of `epochs` as well as `batch_size`. `model.train(..., epochs=5, batch_size=128)` <br>
+Finally, you can specify when you want your model to print the summary while training with the `print_every` function. `model.train(..., print_every=100)`. Keep in mind that the this funciton will be 100 by default.
+<br> Putting this code all together you woudl train your model like this:
+```
+model.train(X, y, validation_data=(X_val, y_val), epochs=5, batch_size=128, print_every=100)
+```
