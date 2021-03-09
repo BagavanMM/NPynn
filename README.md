@@ -3,7 +3,13 @@ This repository shows the code to a project caleld NPynn <i>(En-pine)</i>, a dee
 
 ## Table of Contents
 [Framework included] 
+# Table of Contents
 
+1. [My first title](#my-first-title)
+2. [My second title](#my-second-title)
+## My first title
+Some text.
+## My second title
 ## What this framework includes 
 Currently(v.1.0), this frameowrk is pretty basic. 
 #### Layers:
