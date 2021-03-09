@@ -1,4 +1,4 @@
-
+''' This is the code for NPynn v.1.1 '''
 import numpy as np
 
 
