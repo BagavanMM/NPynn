@@ -71,3 +71,5 @@ Finally, you can specify when you want your model to print the summary while tra
 ```
 model.train(X, y, validation_data=(X_val, y_val), epochs=5, batch_size=128, print_every=100)
 ```
+This is how you can build and train your own neural network wtih NPynn. <br>
+[Here are some more examples of using NPynn](https://github.com/BagavanMM/Npyn/tree/main/Code%20Examples)
