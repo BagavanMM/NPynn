@@ -39,11 +39,9 @@ model.add(Softmax())
 #### Compile model
 After building the actual model, you would then need to compile the model using `model.compile()` with the accuracy, loss, and optimizer.
 ```
-model.compile(
-              loss = CategoricalCrossentropy(),
+model.compile(loss = CategoricalCrossentropy(),
               accuracy = Categorical,
-              optimizer = Adam(learning_rate=0.01)
-              )
+              optimizer = Adam(learning_rate=0.01))
 ```
 Before training, we need to finalize our model using the `model.finalize()` function. This function will *finalize* the model so that it's ready to train.
 ```
