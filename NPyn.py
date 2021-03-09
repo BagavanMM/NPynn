@@ -733,7 +733,7 @@ class Net:
 
 
     
-    def set(self, *, loss, optimizer, accuracy):
+    def compile(self, *, loss, optimizer, accuracy):
         self.loss = loss
         self.optimizer = optimizer
         self.accuracy = accuracy
