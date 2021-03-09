@@ -598,7 +598,7 @@ class BinaryCrossentropy(Loss):
 
 
 # Mean Squared Error loss
-class MeanSquaredError(Loss):
+class MSE(Loss):
 
     # Forward pass
     def forward(self, y_pred, y_true):
@@ -624,7 +624,7 @@ class MeanSquaredError(Loss):
 
 
 # Mean Absolute Error loss
-class MeanAbsoluteError(Loss):  # L1 loss
+class MAE(Loss):  # L1 loss
 
     def forward(self, y_pred, y_true):
 
