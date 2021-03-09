@@ -33,5 +33,18 @@ Currently(v.1.0), this frameowrk is pretty basic.
 
 
 ## How to build model
- 
- 
+Let's go over how to build a model. This section won't go over how to load models, but just how to build a model. You can check out the example codes in this repository to see how you can load models.
+<br> We first need to begin by calling our `Net` function.
+```
+model = Net()
+```
+ After calling our Neural Network function and storing it in the `model` variable. We will then go and add layers to our model using the `model.add()` function. 
+ <br> Here is one example of adding layers.
+ ```
+ model.add(Dense(X.shape[1], 128))
+model.add(ReLU())
+model.add(Dense(128, 128))
+model.add(ReLU())
+model.add(Dense(128, 10))
+model.add(Softmax())
+```
