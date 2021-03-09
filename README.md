@@ -48,3 +48,12 @@ model.add(ReLU())
 model.add(Dense(128, 10))
 model.add(Softmax())
 ```
+#### Compile model
+After building the actuall model, you woudl then need to compile the model using `model.compile()` with the accuracy, loss, and optimizer.
+```
+model.compile(
+              loss = CategoricalCrossentropy(),
+              accuracy = Categorical,
+              optimizer = Adam(learning_rate=0.01)
+              )
+```
