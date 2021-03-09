@@ -4,7 +4,7 @@ import numpy as np
 
 
 # Dense 
-class Layer_Dense:
+class Dense:
 
     # Initialize
     def __init__(self, n_inputs, n_neurons,
@@ -57,7 +57,7 @@ class Layer_Dense:
 
 
 # Dropout
-class Layer_Dropout:
+class Dropout:
 
     # Initialize
     def __init__(self, rate):
@@ -88,7 +88,7 @@ class Layer_Dropout:
 
 
 # Input Layer
-class Layer_Input:
+class Input:
 
     # Forward pass
     def forward(self, inputs, training):
@@ -96,7 +96,7 @@ class Layer_Input:
 
 
 # ReLU
-class Activation_ReLU:
+class ReLU:
 
     # Forward pass
     def forward(self, inputs, training):
@@ -119,7 +119,7 @@ class Activation_ReLU:
 
 
 # Softmax activation
-class Activation_Softmax:
+class Softmax:
 
     # Forward pass
     def forward(self, inputs, training):
@@ -160,7 +160,7 @@ class Activation_Softmax:
 
 
 # Sigmoid activation
-class Activation_Sigmoid:
+class Sigmoid:
 
     # Forward pass
     def forward(self, inputs, training):
@@ -179,7 +179,7 @@ class Activation_Sigmoid:
 
 
 # Linear activation
-class Activation_Linear:
+class Linear:
 
     # Forward pass
     def forward(self, inputs, training):
@@ -198,7 +198,7 @@ class Activation_Linear:
 
 
 # SGD optimizer
-class Optimizer_SGD:
+class SGD:
 
     
     def __init__(self, learning_rate=1., decay=0., momentum=0.):
@@ -256,7 +256,7 @@ class Optimizer_SGD:
 
 
 # Adagrad optimizer
-class Optimizer_Adagrad:
+class Adagrad:
 
     # Initialize
     def __init__(self, learning_rate=1., decay=0., epsilon=1e-7):
@@ -299,7 +299,7 @@ class Optimizer_Adagrad:
 
 
 # RMSprop optimizer
-class Optimizer_RMSprop:
+class RMSprop:
 
     # Initialize
     def __init__(self, learning_rate=0.001, decay=0., epsilon=1e-7,
@@ -345,7 +345,7 @@ class Optimizer_RMSprop:
 
 
 # Adam optimizer
-class Optimizer_Adam:
+class Adam:
 
     # Initialize 
     def __init__(self, learning_rate=0.001, decay=0., epsilon=1e-7,
@@ -496,7 +496,7 @@ class Loss:
 
 
 # Cross-entropy loss
-class Loss_CategoricalCrossentropy(Loss):
+class CategoricalCrossentropy(Loss):
 
     # Forward pass
     def forward(self, y_pred, y_true):
@@ -542,7 +542,7 @@ class Loss_CategoricalCrossentropy(Loss):
         self.dinputs = self.dinputs / samples
 
 # Softmax Activation w/ Categorical Crossentropy Loss
-class Activation_Softmax_Loss_CategoricalCrossentropy():
+class Softmax_CategoricalCrossentropy():
 
     # Backward pass
     def backward(self, dvalues, y_true):
@@ -563,7 +563,7 @@ class Activation_Softmax_Loss_CategoricalCrossentropy():
 
 
 # Binary cross-entropy loss
-class Loss_BinaryCrossentropy(Loss):
+class BinaryCrossentropy(Loss):
 
     # Forward pass
     def forward(self, y_pred, y_true):
@@ -598,7 +598,7 @@ class Loss_BinaryCrossentropy(Loss):
 
 
 # Mean Squared Error loss
-class Loss_MeanSquaredError(Loss):
+class MeanSquaredError(Loss):
 
     # Forward pass
     def forward(self, y_pred, y_true):
@@ -624,7 +624,7 @@ class Loss_MeanSquaredError(Loss):
 
 
 # Mean Absolute Error loss
-class Loss_MeanAbsoluteError(Loss):  # L1 loss
+class MeanAbsoluteError(Loss):  # L1 loss
 
     def forward(self, y_pred, y_true):
 
@@ -684,7 +684,7 @@ class Accuracy:
 
 
 # Classification Accuracy
-class Accuracy_Categorical(Accuracy):
+class Categorical(Accuracy):
 
     def __init__(self, *, binary=False):
         
@@ -702,7 +702,7 @@ class Accuracy_Categorical(Accuracy):
 
 
 # Regression Accuracy
-class Accuracy_Regression(Accuracy):
+class Regression(Accuracy):
 
     def __init__(self):
         
@@ -742,7 +742,7 @@ class Net:
     def finalize(self):
 
         
-        self.input_layer = Layer_Input()
+        self.input_layer = Input()
 
         
         layer_count = len(self.layers)
@@ -780,11 +780,11 @@ class Net:
         )
 
         
-        if isinstance(self.layers[-1], Activation_Softmax) and \
-           isinstance(self.loss, Loss_CategoricalCrossentropy):
+        if isinstance(self.layers[-1], Softmax) and \
+           isinstance(self.loss, CategoricalCrossentropy):
             
             self.softmax_classifier_output = \
-                Activation_Softmax_Loss_CategoricalCrossentropy()
+                Softmax_CategoricalCrossentropy()
 
     # Training NN
     def train(self, X, y, *, epochs=1, batch_size=None,
