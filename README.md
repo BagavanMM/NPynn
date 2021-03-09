@@ -2,8 +2,8 @@
 This repository shows the code to a project caleld NPynn <i>(En-pine)</i>, a deep learning framework that allows you to perform classifciation and regression
 
 # Table of Contents
-1. [What this framework includes](#what-this-framework-includes)
-2. [How to build model](#how-to-build-model)
+[What this framework includes](#what-this-framework-includes)<br>
+[How to build model](#how-to-build-model)
 
 
 ## What this framework includes 
