@@ -1,6 +1,8 @@
 # NPynn - Build Neural Networks in Python (v.1.1)
 This repository shows the code to a project called NPynn <i>(En-pine)</i>, a deep learning framework that allows you to perform classification and regression
 
+![NPynn Image](https://github.com/BagavanMM/NPynn/blob/a2b7854fd0808f5160408bf7ed58c805eddbbd27/Images/NPynn.PNG)
+
 ## Table of Contents
 [Contents of Framework](#contents-of-framework)<br>
 [How to Use NPynn](#how-to-use-npynn)
