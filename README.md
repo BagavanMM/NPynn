@@ -7,7 +7,7 @@ This repository shows the code to a project called NPynn <i>(En-pine)</i>, a dee
 [Contents of Framework](#contents-of-framework)<br>
 [How to Use NPynn](#how-to-use-npynn)<br>
 [Intention](#intention)<br>
-[How did I do it?](#how-did-i-do-it?)
+[How did I do it](#how-did-i-do-it)
 
 
 ## Contents of Framework
@@ -80,7 +80,7 @@ So then I thought: "*hmmm, what if I just build my own deep learning library for
 This would mean that I would need to learn all of that math in order to build one on my own! 
 This might seem crazy, but this is actually really helpful. Cause not only am I going to be learning all of that fun math, but I'm also going to be able to put that into practice as well!
 
-## How did I do it?
+## How did I do it
 Well, we're here right? So how did I do it?
 <br>
 Well, I did this by using the top-down method.
