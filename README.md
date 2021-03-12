@@ -5,7 +5,9 @@ This repository shows the code to a project called NPynn <i>(En-pine)</i>, a dee
 
 ## Table of Contents
 [Contents of Framework](#contents-of-framework)<br>
-[How to Use NPynn](#how-to-use-npynn)
+[How to Use NPynn](#how-to-use-npynn)<br>
+[Intention](#intention)<br>
+[Process](#how-did-i-do-it?)
 
 
 ## Contents of Framework
@@ -61,3 +63,48 @@ model.train(X, y, validation_data=(X_val, y_val), epochs=5, batch_size=128, prin
 ```
 This is how you can build and train your own neural network wtih NPynn. <br>
 [Here are some more examples of using NPynn](https://github.com/BagavanMM/Npyn/tree/main/Code%20Examples)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## Intention
+Artificial Intelligence has been revolutionizing the world! Whether that's from self-driving cars, or fighting the Coronavirus pandemic! However, there is still a ton of complex math behind neural networks! Take this for example:
+![Forward Pass Math](https://github.com/BagavanMM/NPynn/blob/2a43734578c7e14c4b1d9dac4f019bd8d680227c/Images/NeuralNetworkMath.PNG)
+And this is supposed to be the 'simple' part of a neural network! Yea...
+
+Thankfully, we have libraries like Tensorflow, PyTorch and Keras that do all of this math for us! Meaning that you don't need to understand what this means in order to build your own AI models!
+<br>
+So then I thought: "*hmmm, what if I just build my own deep learning library for people to use?*"
+<br>
+This would mean that I would need to learn all of that math in order to build one on my own! 
+This might seem crazy, but this is actually really helpful. Cause not only am I going to be learning all of that fun math, but I'm also going to be able to put that into practice as well!
+
+## How did I do it?
+Well, we're here right? So how did I do it?
+<br>
+Well, I did this by using the top-down method.
+### The Top-Down Method
+The top down method is when you have an end goal in mind and work your way down on how to complete that goal. This might seem a bit confusing so I'll be using my example to teach you.
+<br> First of all, my end goal was to build my own deep learning framework. 
+<br> In order to do that, I first need to understand the math behind neural networks
+<br> In order to understand the math behind neural networks, you need to learn calculast
+<br> And if you want to learn calculus, you need to have a solid understanding of algebra and trigonometry
+<br> *You basically keep going down this process until you stop at something that you already know*
+<br> ...
+<br> In order to understand *X*, I need to know how to multiply. Oh wait, I know how to multiply!
+<br>
+So then you just start there, and once you learn the first thing, you will be able to learn the next until you get to your goal.
+<br> This was essentially what I did in order to learn the math behind neural networks. However, I'm going to be honest. I still don't fully understand some parts of it. 
+
+### Programming Process
+Before I start building my framework, I still need to have to know how to use that math in practice. This is why I decided to first start off by learning how to build neural networks from scratch with Numpy. I've learned how to build these neural networks, and train them. All I would need to do is put that into a framework!
+<br> Simple right? I wish it was...
+After spending days looking at other deep learning frameworks and practicing building my own, I finally finished! Well... there were still a ton of bugs.
+<br> After fixing those bugs, I finally finished building it, and started building my own models from my own framework!
+
+<br>
+<br>
+<br>
+<br>
+And that is how I basically built my own framework!
