@@ -7,7 +7,7 @@ This repository shows the code to a project called NPynn <i>(En-pine)</i>, a dee
 [Contents of Framework](#contents-of-framework)<br>
 [How to Use NPynn](#how-to-use-npynn)<br>
 [Intention](#intention)<br>
-[How did I do it](#how-did-i-do-it)
+[How I did it](#how-did-i-do-it)
 
 
 ## Contents of Framework
